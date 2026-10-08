@@ -6,7 +6,25 @@
 <style>
 :root{color-scheme:light dark;--bg:light-dark(#f5f6f3,#101311);--panel:light-dark(#fff,#191e1b);--panel2:light-dark(#edf0eb,#222925);--text:light-dark(#1c2620,#edf3ee);--muted:light-dark(#68746c,#9ba99f);--line:light-dark(#dfe5de,#303a33);--green:light-dark(#235f45,#9ee0b8);--greenText:light-dark(#fff,#14251a);--amber:light-dark(#b36b2b,#f3bd7d);--blue:light-dark(#337ca3,#91d4f3);--purple:light-dark(#7660ac,#c6b7ff)}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:15px/1.45 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.app{min-height:100vh;background:var(--bg);display:grid;grid-template-columns:235px minmax(0,1fr)}aside{padding:25px 16px;border-right:1px solid var(--line);background:var(--panel)}.brand{display:flex;align-items:center;gap:11px;padding:0 9px 28px}.logo{width:38px;height:38px;border-radius:13px;background:#203a2d;color:#b7edca;display:grid;place-items:center;font-size:20px}.brand strong{letter-spacing:.12em;font-size:14px}.brand small{display:block;color:var(--muted);font-size:10px;letter-spacing:.16em;margin-top:2px}.navlabel{color:var(--muted);font-size:10px;letter-spacing:.14em;padding:13px 12px 7px}.nav{display:flex;align-items:center;gap:11px;width:100%;border:0;background:transparent;color:var(--muted);text-align:left;padding:11px 12px;border-radius:10px;margin:2px 0}.nav .ico{width:20px;text-align:center;font-size:16px}.nav.active,.nav:hover{background:var(--panel2);color:var(--text)}.nav.active{box-shadow:inset 3px 0 var(--green)}.sidefoot{margin-top:30px;padding:14px 12px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}main{min-width:0;padding:28px clamp(18px,3.2vw,48px) 50px;max-width:1500px;width:100%;margin:0 auto}.top{display:flex;justify-content:space-between;gap:16px;align-items:center;margin-bottom:30px}.eyebrow{color:var(--muted);font-size:11px;letter-spacing:.14em;text-transform:uppercase}.top h1{font-size:clamp(25px,3vw,36px);line-height:1.15;letter-spacing:-.04em;margin:6px 0}.sub{color:var(--muted);font-size:14px}.datepill{border:1px solid var(--line);border-radius:999px;padding:9px 13px;color:var(--muted);font-size:12px;white-space:nowrap}.status{display:inline-flex;align-items:center;gap:6px;border-radius:999px;background:var(--panel2);padding:5px 9px;font-size:11px;color:var(--muted)}.dot{width:7px;height:7px;background:#65b985;border-radius:50%}.hero{display:grid;grid-template-columns:1.45fr 1fr;gap:16px;margin-bottom:20px}.card{border:1px solid var(--line);background:var(--panel);border-radius:18px;padding:20px;min-width:0}.welcome{background:linear-gradient(130deg,light-dark(#e7f0e8,#1b2b21),var(--panel));position:relative;overflow:hidden;min-height:210px}.welcome:after{content:'✳';position:absolute;right:22px;bottom:-35px;font-size:170px;color:light-dark(#d2e4d5,#263a2c);opacity:.65;pointer-events:none}.welcome>*{position:relative;z-index:1}.welcome h2{font-size:26px;letter-spacing:-.04em;margin:11px 0 8px;max-width:440px}.welcome p{color:var(--muted);max-width:450px;margin:0 0 20px}.btn{border:0;border-radius:10px;background:var(--green);color:var(--greenText);font-weight:650;padding:10px 14px}.btn.secondary{background:var(--panel2);color:var(--text);border:1px solid var(--line)}.btn.small{padding:7px 10px;font-size:12px}.ai-card{display:flex;flex-direction:column;gap:12px}.cardhead{display:flex;align-items:center;justify-content:space-between;gap:10px}.cardhead h3{font-size:14px;margin:0;font-weight:650}.tiny{font-size:11px;color:var(--muted)}.ai-icon{height:38px;width:38px;border-radius:12px;background:var(--panel2);display:grid;place-items:center;font-size:19px}.prompt{color:var(--muted);font-size:13px;margin:0}.chatbox{display:flex;gap:8px;margin-top:auto}.chatbox input{width:100%;min-width:0;border:1px solid var(--line);border-radius:10px;padding:11px;background:var(--bg);color:var(--text);outline:none}.chatbox input:focus,input:focus,textarea:focus,select:focus{border-color:var(--green);outline:1px solid var(--green)}.sectionhead{display:flex;align-items:center;justify-content:space-between;margin:27px 0 13px;gap:10px}.sectionhead h2{font-size:16px;margin:0;letter-spacing:-.02em}.metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}.metric{padding:17px}.metric-top{display:flex;align-items:center;justify-content:space-between;gap:8px;color:var(--muted);font-size:12px}.metric-ico{font-size:17px}.value{font-size:27px;font-weight:650;letter-spacing:-.05em;margin:13px 0 4px}.value span{font-size:13px;color:var(--muted);font-weight:450;letter-spacing:0}.hint{font-size:11px;color:var(--muted)}.progress{height:5px;border-radius:9px;background:var(--panel2);overflow:hidden;margin:12px 0 6px}.progress i{height:100%;display:block;background:var(--green);border-radius:9px}.lower{display:grid;grid-template-columns:1.2fr 1fr;gap:16px;margin-top:18px}.activitylist{display:flex;flex-direction:column}.activity{display:flex;align-items:flex-start;gap:11px;padding:13px 0;border-bottom:1px solid var(--line)}.activity:last-child{border:0}.activity .bubble{width:34px;height:34px;display:grid;place-items:center;background:var(--panel2);border-radius:10px;flex-shrink:0}.activity strong{font-size:13px;display:block}.activity small{color:var(--muted);font-size:11px}.activity .right{margin-left:auto;text-align:right;font-size:12px;white-space:nowrap}.quickgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}.quick{border:1px solid var(--line);background:var(--panel);border-radius:13px;padding:14px 10px;text-align:left;color:var(--text)}.quick:hover{background:var(--panel2)}.quick span{font-size:20px;display:block;margin-bottom:9px}.quick strong{font-size:12px;display:block}.quick small{font-size:10px;color:var(--muted)}.page{display:none}.page.active{display:block}.loggrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.formrow{display:grid;grid-template-columns:1fr 1fr;gap:10px}.field{display:flex;flex-direction:column;gap:5px;margin:10px 0}.field label{font-size:12px;color:var(--muted)}.field input,.field select,.field textarea{width:100%;padding:10px;border-radius:9px;border:1px solid var(--line);background:var(--bg);color:var(--text)}.field textarea{min-height:80px;resize:vertical}.field .help{font-size:11px;color:var(--muted)}.loglist{margin-top:12px}.logitem{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);align-items:flex-start}.logitem:last-child{border:0}.logitem .meta{flex:1;min-width:0}.logitem strong{display:block;font-size:13px}.logitem small{color:var(--muted);font-size:11px}.logitem .amt{font-size:12px;font-weight:650}.delete{background:transparent;border:0;color:var(--muted);padding:4px 6px}.empty{padding:24px;text-align:center;color:var(--muted);font-size:13px}.notice{padding:12px 14px;background:var(--panel2);border-radius:11px;color:var(--muted);font-size:12px;margin-top:12px}.tag{font-size:10px;border:1px solid var(--line);border-radius:999px;padding:4px 7px;color:var(--muted)}.settingsgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px}.footnote{font-size:11px;color:var(--muted);margin-top:24px}.uploadzone{display:block;border:1px dashed var(--line);border-radius:13px;padding:18px;text-align:center;background:var(--panel2);cursor:pointer}.uploadzone input{display:none}.uploadzone strong{display:block;margin:5px 0}.uploadzone small{color:var(--muted)}.image-preview{display:none;max-width:100%;max-height:260px;object-fit:contain;border-radius:10px;margin-top:12px}.shiftrow{display:grid;grid-template-columns:1fr 1fr;gap:10px}.pillrow{display:flex;flex-wrap:wrap;gap:7px}.pill{border:1px solid var(--line);border-radius:999px;padding:6px 9px;font-size:11px;color:var(--muted)}.switchrow{display:flex;gap:10px;align-items:flex-start;padding:11px 0;border-bottom:1px solid var(--line)}.switchrow input{margin-top:4px;accent-color:var(--green)}.switchrow span{display:block}.switchrow small{display:block;color:var(--muted);font-size:11px;margin-top:3px}.installbar{display:none;align-items:center;justify-content:space-between;gap:12px;padding:12px 14px;border:1px solid var(--line);background:var(--panel);border-radius:14px;margin-bottom:16px}.installbar.show{display:flex}.installbar p{margin:0;font-size:12px}.adaptivebox{border:1px solid var(--line);border-radius:13px;padding:13px;margin-top:12px}.adaptivebox strong{font-size:13px}.adaptivebox p{margin:5px 0 0;color:var(--muted);font-size:12px}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);padding:11px 16px;border-radius:12px;background:var(--text);color:var(--bg);font-size:13px;display:none;z-index:10;box-shadow:0 8px 30px #0002}.toast.show{display:block}.records{font-size:12px;color:var(--muted)}@media(max-width:950px){.app{grid-template-columns:75px minmax(0,1fr)}aside{padding:18px 9px}.brand{padding:0 8px 22px}.brandtext,.navlabel,.nav .navtext,.sidefoot{display:none}.nav{justify-content:center;padding:12px 5px}.nav .ico{width:auto}.hero{grid-template-columns:1fr}.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.lower{grid-template-columns:1fr}}@media(max-width:600px){.app{grid-template-columns:minmax(0,1fr)}aside{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:4px;padding:8px;background:var(--panel);border-right:0;border-bottom:1px solid var(--line);overflow-x:auto}.brand{padding:0 4px;flex-shrink:0}.logo{width:32px;height:32px}.brandtext,.navlabel,.sidefoot{display:none}.nav{flex:0 0 auto;display:flex;width:auto;padding:9px 10px;margin:0}.nav .navtext{display:none}.nav .ico{width:auto}main{padding:16px 12px 32px}.top{align-items:flex-start}.datepill{font-size:10px;padding:7px}.hero{gap:12px}.card{padding:16px}.metrics{gap:9px}.metric{padding:13px}.value{font-size:23px}.loggrid,.settingsgrid{grid-template-columns:1fr}.quickgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.formrow{grid-template-columns:1fr}.welcome h2{font-size:23px}}
 </style></head>
-<body><div class="app">
+<body>
+<div id="authGate" style="position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;background:var(--bg);">
+  <div class="card" style="width:min(100%,440px);padding:26px;">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px">
+      <div class="logo">✳</div><div><strong style="letter-spacing:.12em">LIFE OS</strong><div class="tiny">PERSONAL COMMAND CENTER</div></div>
+    </div>
+    <h2 id="authTitle" style="margin:0 0 8px">Sign in to LIFE OS</h2>
+    <p class="sub" style="margin:0 0 18px">Use your account to open your personal command center.</p>
+    <form id="authForm">
+      <div class="field"><label for="authEmail">Email</label><input id="authEmail" type="email" autocomplete="email" required placeholder="you@example.com"></div>
+      <div class="field"><label for="authPassword">Password</label><input id="authPassword" type="password" autocomplete="current-password" minlength="8" required placeholder="At least 8 characters"></div>
+      <button class="btn" id="authSubmit" type="submit" style="width:100%">Sign in</button>
+    </form>
+    <button class="btn secondary" id="authToggle" type="button" style="width:100%;margin-top:10px">Create a new account</button>
+    <p id="authMessage" class="notice" role="status">Connecting to secure sign-in…</p>
+    <p class="tiny" style="margin:12px 0 0">Use a unique password. If email confirmation is enabled, check your inbox after signing up.</p>
+  </div>
+</div>
+<div class="app" id="lifeOsApp" style="visibility:hidden">
 <aside><div class="brand"><div class="logo">✳</div><div class="brandtext"><strong>LIFE OS</strong><small>PERSONAL COMMAND</small></div></div>
 <div class="navlabel">WORKSPACE</div>
 <button class="nav active" data-page="dashboard"><span class="ico">⌂</span><span class="navtext">Overview</span></button>
@@ -20,7 +38,7 @@
 <div class="sidefoot">LOCAL PREVIEW · V0.1<br><span style="display:inline-block;margin-top:8px">Your life, in one place.</span></div></aside>
 <main>
 <div class="installbar" id="installBar"><p><strong>Make LIFE OS an app</strong><br><span class="tiny">Install it on this device for quick access.</span></p><button class="btn small" id="installApp">Install</button></div>
-<header class="top"><div><div class="eyebrow">YOUR PERSONAL COMMAND CENTER</div><h1 id="pageTitle">Your day, in focus.</h1><div class="sub" id="pageSub">Small actions. Connected progress.</div></div><div class="datepill" id="todayDate">TODAY</div></header>
+<header class="top"><div><div class="eyebrow">YOUR PERSONAL COMMAND CENTER</div><h1 id="pageTitle">Your day, in focus.</h1><div class="sub" id="pageSub">Small actions. Connected progress.</div></div><div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end"><div class="datepill" id="todayDate">TODAY</div><button class="btn secondary small" id="signOutBtn" type="button" style="display:none">Sign out</button></div></header>
 <section class="page active" id="page-dashboard">
 <div class="hero"><div class="card welcome"><div class="eyebrow">THURSDAY, OCTOBER 8</div><h2>Make today work for you.</h2><p>Your personal dashboard is ready. Log what happens as you go — your picture gets clearer with every entry.</p><button class="btn" data-go="nutrition">＋ Log something</button></div>
 <div class="card ai-card"><div class="cardhead"><div style="display:flex;align-items:center;gap:10px"><div class="ai-icon">✳</div><div><h3>Your AI companion</h3><div class="tiny">Context-aware assistant · foundation</div></div></div><span class="tag">DEMO</span></div><p class="prompt">Ask for a plan, log an update in plain English, or reflect on your progress.</p><div class="chatbox"><input id="aiInput" placeholder="e.g. I drank 24 oz of water…"><button class="btn" id="aiSend" aria-label="Send message">↑</button></div><div class="tiny" id="aiHint">This prototype uses rule-based parsing, not a live AI connection.</div></div></div>
@@ -30,7 +48,7 @@
 <div class="card metric"><div class="metric-top"><span>Sleep</span><span class="metric-ico">☾</span></div><div class="value" id="dashSleep">— <span>hrs</span></div><div class="hint" id="sleepHint">Log last night's sleep</div></div>
 <div class="card metric"><div class="metric-top"><span>Saved this month</span><span class="metric-ico">＄</span></div><div class="value" id="dashSaved">$0</div><div class="hint">Based on entries you log</div></div></div>
 <div class="lower"><div class="card"><div class="cardhead"><h3>Recent activity</h3><button class="btn secondary small" data-go="history">View history</button></div><div class="activitylist" id="recentActivity"><div class="empty">Your day starts here. Log a meal, water, sleep, workout, expense, or event.</div></div></div><div class="card"><div class="cardhead"><h3>Quick log</h3><span class="tiny">One tap to start</span></div><div class="quickgrid" style="margin-top:15px"><button class="quick" data-log="nutrition"><span>🍽️</span><strong>Meal</strong><small>Food & macros</small></button><button class="quick" data-log="hydration"><span>💧</span><strong>Water</strong><small>Ounces</small></button><button class="quick" data-log="sleep"><span>🌙</span><strong>Sleep</strong><small>Hours rested</small></button><button class="quick" data-log="workouts"><span>🏋️</span><strong>Workout</strong><small>Training log</small></button><button class="quick" data-log="finances"><span>💳</span><strong>Expense</strong><small>Track spending</small></button><button class="quick" data-log="schedule"><span>🗓️</span><strong>Event</strong><small>Plan your day</small></button></div></div></div>
-<div class="footnote">Prototype data stays in this browser on this device. No account, cloud sync, reminders, or live AI is connected yet.</div></section>
+<div class="footnote">Account sign-in is connected. Log records are still stored locally on this device until cloud sync is added. Live AI and scheduled reminders are not connected yet.</div></section>
 <section class="page" id="page-nutrition"><div class="loggrid"><div class="card"><div class="cardhead"><h3>Log a meal</h3><span class="tag">MANUAL</span></div><form id="nutritionForm"><div class="field"><label>Meal / food</label><input name="name" required placeholder="e.g. Double steak bowl + queso"></div><div class="formrow"><div class="field"><label>Calories (kcal)</label><input name="calories" type="number" min="0" placeholder="650"></div><div class="field"><label>Protein (g)</label><input name="protein" type="number" min="0" placeholder="55"></div></div><div class="formrow"><div class="field"><label>Carbs (g)</label><input name="carbs" type="number" min="0" placeholder="40"></div><div class="field"><label>Fat (g)</label><input name="fat" type="number" min="0" placeholder="25"></div></div><div class="field"><label>Meal time</label><input name="time" type="time"></div><button class="btn">Save meal</button></form></div><div class="card"><div class="cardhead"><h3>Today's nutrition</h3><span class="tiny">From your entries</span></div><div class="metrics" style="grid-template-columns:1fr 1fr;margin-top:14px"><div><div class="tiny">Calories</div><div class="value" id="totalCalories">0</div></div><div><div class="tiny">Protein</div><div class="value" id="totalProtein">0 <span>g</span></div></div><div><div class="tiny">Carbs</div><div class="value" id="totalCarbs">0 <span>g</span></div></div><div><div class="tiny">Fat</div><div class="value" id="totalFat">0 <span>g</span></div></div></div><div class="notice">Nutrition values are only as accurate as the numbers you enter. AI-assisted food estimation is a planned integration.</div></div></div><div class="sectionhead"><h2>Meal history</h2></div><div class="card"><div class="loglist" id="nutritionList"></div></div></section>
 <section class="page" id="page-hydration"><div class="loggrid"><div class="card"><div class="cardhead"><h3>Log water</h3><span class="tag">MANUAL</span></div><form id="waterForm"><div class="field"><label>Amount</label><div class="formrow"><input name="amount" type="number" min="1" required value="16"><select name="unit"><option value="oz">ounces (oz)</option><option value="ml">milliliters (ml)</option><option value="cups">cups</option></select></div></div><div class="field"><label>Note (optional)</label><input name="note" placeholder="Refilled my bottle at work"></div><button class="btn">＋ Add water</button></form><div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px"><button class="btn secondary small" data-water="8">+ 8 oz</button><button class="btn secondary small" data-water="16">+ 16 oz</button><button class="btn secondary small" data-water="24">+ 24 oz</button></div></div><div class="card"><div class="eyebrow">TODAY'S TOTAL</div><div class="value" id="waterBig">0 <span>/ 96 oz</span></div><div class="progress"><i id="waterBigBar" style="width:0%"></i></div><p class="sub" id="waterBigHint">Every entry counts.</p><div class="notice">Your 96 oz bottle is used as a reference target, not a medical prescription. Needs vary with activity, heat, and health.</div></div></div><div class="sectionhead"><h2>Hydration history</h2></div><div class="card"><div class="loglist" id="waterList"></div></div></section>
 <section class="page" id="page-sleep"><div class="loggrid"><div class="card"><div class="cardhead"><h3>Log sleep</h3><span class="tag">MANUAL</span></div><form id="sleepForm"><div class="formrow"><div class="field"><label>Hours slept</label><input name="hours" type="number" step="0.25" min="0" max="24" required placeholder="7.5"></div><div class="field"><label>Quality</label><select name="quality"><option>Okay</option><option>Great</option><option>Restless</option><option>Poor</option></select></div></div><div class="field"><label>Notes (optional)</label><input name="note" placeholder="Woke up groggy, late shift…"></div><button class="btn">Save sleep</button></form></div><div class="card"><h3 style="margin-top:0">Sleep & recovery</h3><p class="sub">Track duration and how you felt. Over time, consistent records can help reveal patterns.</p><div class="notice">Sleep insights and smart schedule adjustments are planned for the AI layer.</div></div></div><div class="sectionhead"><h2>Sleep records</h2></div><div class="card"><div class="loglist" id="sleepList"></div></div></section>
@@ -50,4 +68,114 @@ function updateAdaptivePreview(){const f=$('#adaptiveForm');if(!f)return;const m
 $('#adaptiveForm').addEventListener('change',updateAdaptivePreview);$('#adaptiveForm').addEventListener('submit',e=>{e.preventDefault();const f=formData(e.target);data.settings={...data.settings,autonomy:f.autonomy,suppressWork:e.target.elements.suppressWork.checked,quietHours:e.target.elements.quietHours.checked,quietStart:f.quietStart,quietEnd:f.quietEnd,waterInterval:+f.waterInterval,workoutTime:f.workoutTime,mealTime:f.mealTime,summaryTime:f.summaryTime};persist();updateAdaptivePreview();toast('Adaptive preferences saved locally.');});
 $('#scheduleImage').addEventListener('change',e=>{const file=e.target.files&&e.target.files[0];if(!file)return;if(!file.type.startsWith('image/')){toast('Choose an image file.');return;}const reader=new FileReader();reader.onload=()=>{$('#scheduleImagePreview').src=reader.result;$('#scheduleImagePreview').style.display='block';$('#scheduleImageStatus').textContent='Screenshot loaded for preview. Automatic shift extraction needs the live AI backend; confirm shift times manually below for now.';$('#analyzeSchedule').disabled=true;};reader.readAsDataURL(file);});$('#analyzeSchedule').addEventListener('click',()=>toast('AI schedule extraction will be enabled when the secure AI backend is connected.'));$('#installSettings').addEventListener('click',()=>{if(window.__lifeOsInstallPrompt){window.__lifeOsInstallPrompt.prompt();}else toast('Install becomes available after LIFE OS is deployed over HTTPS with its PWA files.');});
 $('#exportData').addEventListener('click',()=>{const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='life-os-backup-'+today()+'.json';a.click();URL.revokeObjectURL(url);toast('Backup exported.')});$('#importData').addEventListener('click',()=>$('#importFile').click());$('#importFile').addEventListener('change',async e=>{const f=e.target.files[0];if(!f)return;try{const parsed=JSON.parse(await f.text());if(!Array.isArray(parsed.entries))throw Error('Invalid backup');data={...data,...parsed,settings:{...data.settings,...parsed.settings}};persist();render();toast('Backup imported.')}catch(err){toast('Could not read that backup file.')}e.target.value=''});$('#clearData').addEventListener('click',()=>{if(confirm('Delete all LIFE OS records and targets from this browser? Export a backup first if you may need them.')){data={entries:[],settings:{waterTarget:96,proteinTarget:150,savingsGoal:600}};persist();render();toast('Local records cleared.')}});window.addEventListener('beforeinstallprompt',e=>{e.preventDefault();window.__lifeOsInstallPrompt=e;$('#installBar').classList.add('show');$('#installApp').onclick=async()=>{e.prompt();await e.userChoice;$('#installBar').classList.remove('show');window.__lifeOsInstallPrompt=null;};});$('#installApp').addEventListener('click',()=>{if(window.__lifeOsInstallPrompt)window.__lifeOsInstallPrompt.prompt();else toast('Install becomes available after deployment over HTTPS.');});const d=new Date();$('#todayDate').textContent=d.toLocaleDateString(undefined,{weekday:'short',month:'short',day:'numeric',year:'numeric'}).toUpperCase();$('.welcome .eyebrow').textContent=d.toLocaleDateString(undefined,{weekday:'long',month:'long',day:'numeric'}).toUpperCase();render();if('serviceWorker' in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js').catch(()=>{}));}})();
-</script></body></html>
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(() => {
+  'use strict';
+  // Replace these two placeholders with the Project URL and Publishable key from Supabase.
+  const SUPABASE_URL = 'https://klrcybcytthxlrktlbso.supabase.co';
+  const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_DE9VPhSiu-ryguATuTNKxA_phP7jh6s';
+
+  const gate = document.getElementById('authGate');
+  const app = document.getElementById('lifeOsApp');
+  const form = document.getElementById('authForm');
+  const emailInput = document.getElementById('authEmail');
+  const passwordInput = document.getElementById('authPassword');
+  const title = document.getElementById('authTitle');
+  const submit = document.getElementById('authSubmit');
+  const toggle = document.getElementById('authToggle');
+  const message = document.getElementById('authMessage');
+  const signOut = document.getElementById('signOutBtn');
+  let isSignUp = false;
+  let client = null;
+
+  function say(text, isError = false) {
+    message.textContent = text;
+    message.style.color = isError ? '#d66' : '';
+  }
+  function setMode(signup) {
+    isSignUp = signup;
+    title.textContent = signup ? 'Create your LIFE OS account' : 'Sign in to LIFE OS';
+    submit.textContent = signup ? 'Create account' : 'Sign in';
+    toggle.textContent = signup ? 'I already have an account' : 'Create a new account';
+    passwordInput.autocomplete = signup ? 'new-password' : 'current-password';
+    say(signup ? 'Use an email address you can access.' : 'Sign in with your email and password.');
+  }
+  function showApp(user) {
+    gate.style.display = 'none';
+    app.style.visibility = 'visible';
+    signOut.style.display = 'inline-flex';
+    signOut.title = user && user.email ? 'Signed in as ' + user.email : 'Sign out';
+  }
+  function showGate(text) {
+    app.style.visibility = 'hidden';
+    gate.style.display = 'flex';
+    signOut.style.display = 'none';
+    say(text || 'Sign in or create an account to continue.');
+  }
+
+  if (!window.supabase || !window.supabase.createClient) {
+    showGate('Could not load the Supabase sign-in library. Check your internet connection and refresh.');
+    return;
+  }
+  if (SUPABASE_URL.includes('PASTE_') || SUPABASE_PUBLISHABLE_KEY.includes('PASTE_')) {
+    showGate('Setup needed: add your Supabase Project URL and Publishable key in this file, then upload it to GitHub.');
+    return;
+  }
+
+  client = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+
+  toggle.addEventListener('click', () => setMode(!isSignUp));
+  form.addEventListener('submit', async (event) => {
+    event.preventDefault();
+    submit.disabled = true;
+    toggle.disabled = true;
+    say(isSignUp ? 'Creating your account…' : 'Signing you in…');
+    try {
+      const email = emailInput.value.trim();
+      const password = passwordInput.value;
+      if (isSignUp) {
+        const { data, error } = await client.auth.signUp({ email, password });
+        if (error) throw error;
+        if (data.session) {
+          showApp(data.user);
+        } else {
+          say('Account created. Check your email for a confirmation link, then return here and sign in.');
+          setMode(false);
+          emailInput.value = email;
+        }
+      } else {
+        const { data, error } = await client.auth.signInWithPassword({ email, password });
+        if (error) throw error;
+        showApp(data.user);
+      }
+    } catch (error) {
+      say(error && error.message ? error.message : 'Sign-in failed. Please try again.', true);
+    } finally {
+      submit.disabled = false;
+      toggle.disabled = false;
+    }
+  });
+
+  signOut.addEventListener('click', async () => {
+    signOut.disabled = true;
+    const { error } = await client.auth.signOut();
+    signOut.disabled = false;
+    if (error) say(error.message, true);
+    else showGate('You have signed out.');
+  });
+
+  client.auth.getSession().then(({ data, error }) => {
+    if (error) showGate('Could not check your session: ' + error.message);
+    else if (data.session) showApp(data.session.user);
+    else showGate('Sign in or create an account to continue.');
+  });
+  client.auth.onAuthStateChange((_event, session) => {
+    if (session) showApp(session.user);
+    else showGate('Sign in or create an account to continue.');
+  });
+})();
+</script>
+
+</body></html>
